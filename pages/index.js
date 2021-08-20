@@ -1,17 +1,8 @@
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import Link from "next/link"
 
 const Page = () => {
-
   const [text, setText] = useState("Hello, World")
-
-
-  useEffect(() => {
-    setTimeout(() => {
-      console.log(setText("initial run finished"))
-    }, 5000)
-  }, [])
-
 
   return (
     <div>
