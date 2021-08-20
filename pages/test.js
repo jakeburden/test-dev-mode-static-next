@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import Link from "next/link"
 
 const Page = () => {
   const [text, setText] = useState("Test page")
@@ -11,7 +12,14 @@ const Page = () => {
   }, [])
 
 
-  return <p>{text}</p>
+  return (
+    <div>
+      <p>{text}</p>
+      <Link href="/">
+        <a>Home page</a> 
+      </Link>
+    </div>
+  )
 }
 
 export default Page
