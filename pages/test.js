@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react"
 
 const Page = () => {
-
-  const [text, setText] = useState("Hello, World")
+  const [text, setText] = useState("Test page")
 
 
   useEffect(() => {
     setTimeout(() => {
-      console.log(setText("initial run complete"))
+      console.log(setText("test complete"))
     }, 5000)
   }, [])
 
