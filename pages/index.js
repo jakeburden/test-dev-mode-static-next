@@ -8,7 +8,7 @@ const Page = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      console.log(setText("initial run complete"))
+      console.log(setText("initial run finished"))
     }, 5000)
   }, [])
 
@@ -20,7 +20,7 @@ const Page = () => {
         <a>Test page</a> 
       </Link>
     </div>
-    )
+  )
 }
 
 export default Page

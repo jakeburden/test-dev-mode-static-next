@@ -7,7 +7,7 @@ const Page = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      console.log(setText("test complete"))
+      console.log(setText("test ran"))
     }, 5000)
   }, [])
 
